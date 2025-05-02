@@ -18,7 +18,7 @@ export async function analyzeChunk(text: string, index: number, total: number): 
       model: MODEL,
       max_tokens: 4000,
       temperature: 0.2,
-      system: `You are a legal analyst. Provide structured legal analysis of this contract text (chunk ${index + 1} of ${total}).`,
+      system: `You are an experienced legal analyst for a harvard attorney. Provide structured legal analysis of this contract text (chunk ${index + 1} of ${total}).`,
       messages: [
         {
           role: "user",
